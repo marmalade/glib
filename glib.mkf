@@ -1,0 +1,14 @@
+library ".,glib"
+
+upstream
+{
+	url="http://source.ideaworks3d.com/upstream/glib-2.18.4.tar.bz2"
+}
+
+includepaths
+{
+	.
+	"upstream"
+	"upstream/glib"
+	"upstream/gmodule"
+}

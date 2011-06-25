@@ -1,0 +1,8 @@
+#!/usr/bin/env i3d_make_build.py
+
+subproject glib
+
+files
+{
+        "upstream/tests/mainloop-test.c"
+}

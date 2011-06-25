@@ -1,0 +1,202 @@
+#!/usr/bin/env mkb
+
+option lib
+
+files
+{
+	glib.defines.txt
+}
+
+defines
+{
+	HAVE_CONFIG_H
+	G_DISABLE_DEPRECATED
+	GOBJECT_COMPILATION
+	DISABLE_VISIBILITY
+	LIBDIR='"."'
+}
+
+subproject glib
+
+includepaths
+{
+	internal
+	"upstream/glib"
+	"upstream/gmodule"
+}
+
+files
+{
+	("upstream/glib")
+	#gspawn.h
+	#gspawn.c
+	#gthreadpool.h
+	#gthreadpool.c
+	gunicollate.c
+	gunicode.h
+	gconvert.h
+	gconvert.c
+	giounix.c
+	giochannel.h
+	giochannel.c
+	gmain.c
+	gmain.h
+	goption.h
+	gunichartables.h
+	gtree.h
+	gbacktrace.c
+	gnode.c
+	gmappedfile.c
+	gmirroringtable.h
+	gcompletion.h
+	gunidecomp.h
+	gslist.c
+	gslice.h
+	gpattern.h
+	gdataset.c
+	gdataset.h
+	garray.h
+	gstring.c
+	glib-object.h
+	gutils.c
+	gpattern.c
+	gnode.h
+	gprintfint.h
+	grand.c
+	gstrfuncs.h
+	gcache.c
+	glist.c
+	gqueue.h
+	grel.h
+	gbookmarkfile.h
+	gthread.c
+	gatomic.c
+	gstrfuncs.c
+	gfileutils.h
+	gstring.h
+	goption.c
+	gquark.h
+	gtimer.h
+	gmessages.c
+	gshell.c
+	gdebug.h
+	gtimer.c
+	ghook.c
+	gerror.h
+	galias.h
+	gutf8.c
+	grand.h
+	gbsearcharray.h
+	gatomic.h
+	glist.h
+	gunidecomp.c
+	gprintf.h
+	gmem.h
+	gerror.c
+	galiasdef.c
+	gmarkup.h
+	gdir.c
+	gbase64.h
+	gslist.h
+	gdatasetprivate.h
+	gi18n-lib.h
+	gcache.h
+	gtree.c
+	gqsort.c
+	gthreadprivate.h
+	gbase64.c
+	gmappedfile.h
+	gthread.h
+	gscanner.c
+	gutils.h
+	gbacktrace.h
+	gdir.h
+	gshell.h
+	gprimes.c
+	gmacros.h
+	gkeyfile.c
+	gkeyfile.h
+	gi18n.h
+	gunibreak.h
+	gcompletion.c
+	gmarkup.c
+	gdate.h
+	ghash.c
+	glibintl.h
+	gfileutils.c
+	gprintf.c
+	galloca.h
+	gdate.c
+	gscanner.h
+	guniprop.c
+	grel.c
+	gprimes.h
+	gmessages.h
+	gqueue.c
+	gunicomp.h
+	gtypes.h
+	ghook.h
+	gmem.c
+	gunicodeprivate.h
+	ghash.h
+	gasyncqueue.c
+	gbookmarkfile.c
+	gqsort.h
+	gstdio.c
+	garray.c
+	gslice.c
+	gstdio.h
+	glib.h
+	gasyncqueue.h
+	gunibreak.c
+	gtestutils.c
+
+	["libcharset"]
+	("upstream/glib/libcharset")
+	localcharset.c
+
+	["gobject"]
+	("upstream/gobject")
+	#glib-genmarshal.c
+	#testgobject.c
+	#gmarshal.c
+	#gmarshal.h
+	gclosure.c
+	gsourceclosure.h
+	gtypemodule.c
+	gobject.c
+	gboxed.h
+	gclosure.h
+	stamp-gmarshal.h
+	gvaluearray.c
+	gobjectaliasdef.c
+	gparam.c
+	gsignal.h
+	gtype.c
+	gobject-query.c
+	gparamspecs.c
+	gtypeplugin.h
+	gobject.h
+	genums.c
+	gparam.h
+	gtypemodule.h
+	gvaluearray.h
+	gvalue.c
+	genums.h
+	gvaluetransform.c
+	gboxed.c
+	gvalue.h
+	gobjectalias.h
+	gtype.h
+	gsignal.c
+	gobjectnotifyqueue.c
+	gvaluetypes.h
+	gsourceclosure.c
+	gvaluecollector.h
+	gparamspecs.h
+	gvaluetypes.c
+	gtypeplugin.c
+
+	("upstream/gthread")
+	gthread-impl.c
+}

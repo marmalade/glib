@@ -1,0 +1,10 @@
+#!/usr/bin/env mkb
+
+package glib
+
+subproject glib
+
+files
+{
+        "../upstream/tests/date-test.c"
+}

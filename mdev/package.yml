@@ -1,8 +1,9 @@
 Package: glib
 Version: 2.18.4
-Revision: 1
-Maintainer: Marmalade Package Team <packages@ideaworkslabs.com>
+Revision: 2
+Maintainer: Marmalade Package Team <packages@marmalademail.com>
 Mkbs: glib.mkb
+Libraries: glib
 Description: |
  GLib is a library containing many useful C routines for things such
  as trees, hashes, lists, and strings.  It is a useful general-purpose
@@ -15,21 +16,9 @@ Contents:
  - upstream/glib/*.h : h/glib
  - upstream/gio/*.h : h/gio
  - glibconfig.h : h/glibconfig.h
- - lib/arm/libglib_d.a
- - lib/arm/libglib.a
-Contents-src:
+Contents-Source:
  - glib.mkf
  - glib.mkb
  - glib.defines.txt
  - glibconfig.h
  - internal/config.h
-Contents-platform:
-  win32:
-    - lib/x86/glib.lib
-    - lib/x86/glib_d.lib
-  linux:
-    - lib/x86/linux/libglib.a
-    - lib/x86/linux/libglib_d.a
-  macosx:
-    - lib/x86/darwin/libglib.a
-    - lib/x86/darwin/libglib_d.a

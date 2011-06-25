@@ -1,0 +1,6 @@
+build_glib_*
+upstream
+lib
+glib_*.msrc
+glib_*.mdev
+glib-*.tar.bz2

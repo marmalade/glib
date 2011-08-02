@@ -1,0 +1,5 @@
+glib (2.18.4-3)
+
+  * add changelog, and rebuild for added mips support.
+
+ -- Sam Clegg <sam@marmalademail.com>  Tue, 02 Aug 2011 23:21:18 +0000

@@ -1,6 +1,4 @@
 Package: glib
-Version: 2.18.4
-Revision: 2
 Maintainer: Marmalade Package Team <packages@marmalademail.com>
 Mkbs: glib.mkb
 Libraries: glib
